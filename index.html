@@ -23,7 +23,31 @@
 <body>
 	<header>
 	
-	<div class="jumbotron">
+	
+	<nav class="navbar navbar-inverse">
+	<h2><small>fixed header</small></h2>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">cypher-point bootstrap layout</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+
+        <li><a href="javascript.html">bootstrap javascript</a></li>
+        <li><a href="test.html">bootstrap test page</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+	<div class="jumbotron mt60">
 	<h1 class="page-header">bootstrap built-in class collection</h1>
 	</div>
 		<div class="container">
@@ -42,7 +66,7 @@
 
 	<article>
 		
-		<div class="container-fluid mb60">
+		<div class="container mb60">
 		<h2><small>Button Tags</small></h2>
 	
 				<a href="#" class="btn btn-info" role="button">Link Button</a>
@@ -163,17 +187,30 @@
     </div>
   </div>
 </div>
-<h2><small>Tabsss</small></h2>
+<h2><small>Tabs</small></h2>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Menu 1</a></li>
-  <li><a href="#">Menu 2</a></li>
-  <li><a href="#">Menu 3</a></li>
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
 </ul>
-		</div>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
 	
 		
-		
+	</div>	
 		
 	</article>
 	<footer> </footer>
